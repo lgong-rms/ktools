@@ -42,9 +42,7 @@
 #include <map>
 #include "getmodel.h"
 #include "../include/oasis.h"
-#ifndef _MSC_VER
 #include <zlib.h>
-#endif
 struct Exposure {
   int location_id;
   AREAPERIL_INT areaperil_id;

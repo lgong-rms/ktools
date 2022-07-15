@@ -62,7 +62,7 @@ void segfault_sigaction(int, siginfo_t *si, void *) {
 
 namespace leccalc {
 	void doit(const std::string &subfolder, FILE **fout,
-		  const bool useReturnPeriodFile, const bool skipheader,
+		  const bool useReturnPeriodFile, bool skipheader,
 		  bool *outputFlags, bool ordFlag,
 		  const std::string *parquetFileNames);
 }

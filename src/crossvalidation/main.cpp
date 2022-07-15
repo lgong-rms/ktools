@@ -37,9 +37,9 @@ void help() {
 int main(int argc, char *argv[]) {
 
   progname = argv[0];
-  char *damagebinFileName;
-  char *footprintFileName;
-  char *vulnerabilityFileName;
+  char *damagebinFileName = nullptr;
+  char *footprintFileName = nullptr;
+  char *vulnerabilityFileName = nullptr;
   int opt;
   while((opt = getopt(argc, argv, ":d:f:s:vh")) != -1) {
     switch(opt) {

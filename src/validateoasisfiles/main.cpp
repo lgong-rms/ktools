@@ -37,7 +37,7 @@ void help() {
 int main(int argc, char *argv[]) {
 
   progname = argv[0];
-  char *oasisFilesDir;
+  char *oasisFilesDir = nullptr;
   bool gulOnly = false;
   int opt;
   while((opt = getopt(argc, argv, ":d:gvh")) != -1) {
