@@ -4,6 +4,6 @@ target_sources(ensembletocsv
 		ensembletocsv.cpp main.cpp
 )
 if (WIN32)
-	target_link_libraries(ensembletocsv, wingetopt)
+	target_link_libraries(ensembletocsv PRIVATE wingetopt)
 endif()
 install(TARGETS ensembletocsv RUNTIME DESTINATION bin)

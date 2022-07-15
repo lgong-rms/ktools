@@ -24,7 +24,7 @@ else()
 endif()
 
 if (WIN32)
-	target_link_libraries(katparquet wingetopt)
+	target_link_libraries(katparquet PRIVATE wingetopt)
 endif()
 
 install(TARGETS katparquet RUNTIME DESTINATION bin)

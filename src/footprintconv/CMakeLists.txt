@@ -4,6 +4,9 @@ target_sources(footprintconv
 		footprintconv.cpp
 )
 
-target_link_libraries(footprintconv ${ZLIB_LIBRARIES})
+if (WIN32)
+	target_link_libraries(footprintconv ${ZLIB_LIBRARIES})
+	target_include_directories(footprintconv PRIVATE ${ZLIB_INCLUDE_DIR})
+endif()
 
 install(TARGETS footprintconv RUNTIME DESTINATION bin)

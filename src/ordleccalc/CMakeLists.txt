@@ -24,7 +24,7 @@ else()
 endif()
 
 if (WIN32)
-	target_link_libraries(ordleccalc wingetopt)
+	target_link_libraries(ordleccalc PRIVATE wingetopt)
 endif()
 
 install(TARGETS ordleccalc RUNTIME DESTINATION bin)

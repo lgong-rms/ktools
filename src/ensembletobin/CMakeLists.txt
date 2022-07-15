@@ -4,6 +4,6 @@ target_sources(ensembletobin
 		ensembletobin.cpp main.cpp
 )
 if (WIN32)
-	target_link_libraries(ensembletobin, wingetopt)
+	target_link_libraries(ensembletobin PRIVATE wingetopt)
 endif()
 install(TARGETS ensembletobin RUNTIME DESTINATION bin)

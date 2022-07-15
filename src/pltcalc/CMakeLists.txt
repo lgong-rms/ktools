@@ -24,7 +24,7 @@ else()
 endif()
 
 if (WIN32)
-	target_link_libraries(pltcalc wingetopt)
+	target_link_libraries(pltcalc PRIVATE wingetopt)
 endif()
 
 install(TARGETS pltcalc RUNTIME DESTINATION bin)

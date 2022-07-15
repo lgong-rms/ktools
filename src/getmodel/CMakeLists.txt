@@ -7,6 +7,7 @@ target_sources(getmodel
 target_link_libraries(getmodel ${ZLIB_LIBRARIES})
 if (WIN32)
 	target_link_libraries(getmodel wingetopt ${ZLIB_LIBRARIES})
+	target_include_directories(getmodel PRIVATE ${ZLIB_INCLUDE_DIR})
 endif()
 
 install(TARGETS getmodel RUNTIME DESTINATION bin)

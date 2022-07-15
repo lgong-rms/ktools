@@ -24,7 +24,7 @@ else()
 endif()
 
 if (WIN32)
-	target_link_libraries(aalcalc wingetopt)
+	target_link_libraries(aalcalc PRIVATE wingetopt)
 endif()
 
 install(TARGETS aalcalc RUNTIME DESTINATION bin)
