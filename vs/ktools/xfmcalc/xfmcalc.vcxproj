@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3614B08E-9308-4059-A452-1CF2CE4FD007}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>xfmcalc</RootNamespace>
+    <RootNamespace>fmcalc</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -145,12 +145,12 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\xfmcalc\fmcalc.h" />
-    <ClInclude Include="..\..\..\src\xfmcalc\fmstructs.h" />
+    <ClInclude Include="..\..\..\src\fmcalc\fmcalc.h" />
+    <ClInclude Include="..\..\..\src\fmcalc\fmstructs.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\xfmcalc\fmcalc.cpp" />
-    <ClCompile Include="..\..\..\src\xfmcalc\main.cpp" />
+    <ClCompile Include="..\..\..\src\fmcalc\fmcalc.cpp" />
+    <ClCompile Include="..\..\..\src\fmcalc\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\wingetopt\wingetopt.vcxproj">
